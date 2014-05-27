@@ -1,0 +1,75 @@
+{
+    "properties": {
+        "name": "Playground for NoFlo and Framer",
+        "id": "lo038",
+        "project": "NoFlo-Framer-playground",
+        "environment": {
+            "type": "noflo-browser",
+            "content": ""
+        }
+    },
+    "inports": {},
+    "outports": {},
+    "groups": [],
+    "processes": {
+        "NoFlo-Framer-playground/Framer Layer_t5sjo": {
+            "component": "NoFlo-Framer-playground/Framer Layer",
+            "metadata": {
+                "label": "NoFlo-Framer-playground/Framer Layer",
+                "x": 36,
+                "y": 36
+            }
+        },
+        "NoFlo-Framer-playground/Framer Layer_lfiv7": {
+            "component": "NoFlo-Framer-playground/Framer Layer",
+            "metadata": {
+                "label": "NoFlo-Framer-playground/Framer Layer",
+                "x": 180,
+                "y": 36
+            }
+        }
+    },
+    "connections": [
+        {
+            "src": {
+                "process": "NoFlo-Framer-playground/Framer Layer_t5sjo",
+                "port": "touching"
+            },
+            "tgt": {
+                "process": "NoFlo-Framer-playground/Framer Layer_lfiv7",
+                "port": "visible"
+            },
+            "metadata": {
+                "route": null
+            }
+        },
+        {
+            "data": true,
+            "tgt": {
+                "process": "NoFlo-Framer-playground/Framer Layer_t5sjo",
+                "port": "exists"
+            }
+        },
+        {
+            "data": "deliriousbiznasty",
+            "tgt": {
+                "process": "NoFlo-Framer-playground/Framer Layer_t5sjo",
+                "port": "name"
+            }
+        },
+        {
+            "data": true,
+            "tgt": {
+                "process": "NoFlo-Framer-playground/Framer Layer_t5sjo",
+                "port": "visible"
+            }
+        },
+        {
+            "data": 110,
+            "tgt": {
+                "process": "NoFlo-Framer-playground/Framer Layer_lfiv7",
+                "port": "y"
+            }
+        }
+    ]
+}
